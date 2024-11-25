@@ -15,6 +15,8 @@ h2 {
 
 p {
     color: white;
+    font-family: "palast-variable", sans-serif;
+    font-variation-settings: "wght" 350;
 }
 
 .nav {
@@ -43,7 +45,6 @@ ul.nav a:hover {
 
 .grid-container {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: auto auto auto;
 }
 .grid-item {
@@ -55,7 +56,7 @@ ul.nav a:hover {
 .navmenu-section {
     grid-column: 1 / span 3;
     grid-row: 1;
-    background-color: rgb(139, 21, 21);
+    background-color: rgb(255, 171, 69);
     text-align: center;
 }
 
@@ -68,7 +69,7 @@ ul.nav a:hover {
     background-color: rgb(139, 21, 21);
     margin: 20px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .container-fluid {
@@ -85,21 +86,144 @@ ul.nav a:hover {
 .specialties {
     background-color: rgb(139, 21, 21);
     margin: 20px;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 75px;
-}
+    width: 40%;
+  }
   
-
-.card:hover {
+  .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+  }
   
-.container {
+  .container {
     padding: 2px 16px;
+  }
+
+  .card-body {
+    background-color: rgb(255, 171, 69);
+    padding: 100px;
+  }
+
+  .specialties-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+
+}
+  .specialties-grid-item {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgb(255, 171, 69);
+}
+
+.card1 {
+    grid-column: 1 / span 1;
+}
+
+.card2 {
+    grid-column: 2 / span 1;
+}
+
+.card3 {
+    grid-column: 3 / span 1;
+}
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: "palast-variable", sans-serif;
+}
+
+.footer {
+    background-color: rgb(139, 21, 21);
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.navmenu-section-delivery {
+    grid-column: 1 / span 5;
+}
+
+.delivery {
+    margin: 20px;
+    grid-column: 1 / span 5;
+}
+
+.delivery-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.app1 {
+    grid-column: 1 / span 1;
+}
+
+.app2 {
+    grid-column: 2 / span 1;
+}
+
+.app3 {
+    grid-column: 3 / span 1;
+}
+
+.app4 {
+    grid-column: 4 / span 1;
+}
+
+.app5 {
+    grid-column: 5 / span 1;;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;     
+    max-width: 100%;      
+    padding: 10px;           
+    box-sizing: border-box;   
+    width: 80%;
+    gap: 20px;
+}
+
+
+.image-container img {
+    flex: 1;                                
+    max-width: 100%;  
+    height: auto;   
+}
+
+.reservation-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+
+}
+  .reservation-grid-item {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgb(139, 21, 21);
+}
+.address-section {
+    grid-column: 1 / span 1;
+}
+
+.feedback-form-options-container {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-form-options-container label {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.feedback-form-options-container p {
+    margin: 0;
 }
